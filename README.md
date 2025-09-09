@@ -2,46 +2,82 @@
 
 > This project is based on [OtakuTotipotent/my_flask_app](https://github.com/OtakuTotipotent/my_flask_app)
 
-## Structure of website: Application Blueprint
+## Introduction
+>
+> Helloworld Chat is a web application that allows users to create accounts, manage contacts, and engage in private messaging. The application is built using Django, a popular & powerful web framework for Python, and follows the Model-View-Controller (MVC) architectural pattern.
+> The application is designed to be user-friendly, secure, and scalable, with a focus on providing a seamless user experience.
 
-``` Markdown
+## Planning & Roadmap
+>
+> For planning and roadmap, please refer to [Project.md](Project.md)
+>
 
-'/'
-├── The homepage of the website
-|   └── Available for all with limited features and access
-|   └── Without account, user can only view public content
-|   └── With account, user can access private content and features
-|
-└── If user is not logged in
-|   └── A Welcome message
-|   └── A "Login" button
-|   └── A "Sign Up" button
-|
-|── If user is logged in
-|   └── "Helloworld Chat" heading at top left
-|   └── Search bar at top right
-|   └── An "+ Add" button at bottom right inside the contact list container
-|   └── Contains user contacts as bubble buttons
-|   |   └── On hovering over them, shows a delete icon (🗑️ with red color)
-|   |   └── On clicking the delete icon, prompts a confirmation dialog
-|   |   └── On confirming, deletes the contact from the list
-|   |   └── On clicking the contact bubble, opens that user's profile page '/<username>'
-|   |   └── On clicking the "+ Add" button, opens a modal dialog to add a new contact (by username that user has signed up with and a Name field that current user can set for that contact on his own choice)
-|   |   └── The user can add multiple contacts
-|   |   └── The new contact is added to the contact list and saved in the database
-|   |   └── On creating a new contact, the user is redirected to that contact's profile page '/<username>' if public, else a request is sent to that user for approval
-|   └── The main content area with a lot of public random posts for users without logged-in and a lot of public + private posts for logged-in users
-|   └── Each post has a title, content, author, timestamp, copy, hide, promote, dislike, and like buttons
-|   |    └── On clicking the copy button, the post content is copied to clipboard
-|   └── An option to create a new post with title and content that directs to '/create_post' page If user is logged in
-|
-|── A Header at the top
-|   └── Website Logo & Title
-|   └── Navigation Bar with links to other pages
-|   └── A User Profile Icon at top right 
-|   └── A Search icon for global search
-|   └── A theme toggle button (Default: Pink, others: Blue, Green, Dark, Rainbow, Gold, Purple, Red)
-|
-└── A Footer at the bottom
+## Installation & Setup
+>
+> To run this application locally, follow these steps:
+>
+> 1 Clone the repository:
+>
+> ```bash
+> git clone
+> ```
+>
+> 2 Navigate to the project directory:
+>
+> ```bash
+> cd helloworld_chat
+> ```
+>
+> 3 Create a virtual environment:
+>
+> ```bash
+> python -m venv venv
+> ```
+>
+> 4 Activate the virtual environment:
+>
+> - On Windows:
+>
+>   ```bash
+>   venv\Scripts\activate
+>   ```
+>
+> - On macOS/Linux:
+>
+>   ```bash
+>   source venv/bin/activate
+>   ```
+>
+> 5 Install the required dependencies:
+>
+> ```bash
+> pip install -r requirements.txt
+> ```
+>
+> 6 Set up the database:
+>
+> ```bash
+> python manage.py migrate
+> ```
+>
+> 7 Create a superuser account:
+>
+> ```bash
+> python manage.py createsuperuser
+> ```
+>
+> 8 Run the development server:
+>
+> ```bash
+> python manage.py runserver
+> ```
+>
+> 9 Open your web browser and navigate to `http://127.0.0.1:8000`.
 
-```
+## Ownership, Control & Contribution
+>
+> This project is maintained by [Your Name](https://github.com/yourusername)
+> Feel free to fork and contribute to the project.
+> For any issues or feature requests, please open an issue on the GitHub repository.
+> For any questions or support, please contact [your email](mailto:otakutotipotent@gmail.com)
+> License: [MIT License](LICENSE)
