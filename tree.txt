@@ -1,0 +1,52 @@
+Folder PATH listing
+Volume serial number is C2BD-5BE6
+D:.
+�   .gitattributes
+�   .gitignore
+�   app.py
+�   db.sqlite3
+�   LICENSE
+�   manage.py
+�   Project.md
+�   README.md
+�   requirements.txt
+�   tree.txt
+�   
++---helloworld
+�   �   admin.py
+�   �   apps.py
+�   �   models.py
+�   �   tests.py
+�   �   views.py
+�   �   __init__.py
+�   �   
+�   +---migrations
+�           __init__.py
+�           
++---helloworld_chat_app
+�   �   asgi.py
+�   �   settings.py
+�   �   urls.py
+�   �   wsgi.py
+�   �   __init__.py
+�   �   
+�   +---__pycache__
+�           settings.cpython-313.pyc
+�           urls.cpython-313.pyc
+�           wsgi.cpython-313.pyc
+�           __init__.cpython-313.pyc
+�           
++---instance
+�       database.db
++---website
+    �   models.py
+    �   views.py
+    �   __init__.py
+    �   
+    +---static
+    �       script.js
+    �       style.css
+    �       
+    +---templates
+            index.html
+            
