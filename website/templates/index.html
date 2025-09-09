@@ -9,11 +9,23 @@
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <h1>Helloworld-Chat</h1>
+    </header>
+
+    <div class="container">
+        <div class="container-header">
+            <!-- Hello [username]! -->
+            <h1>Hello User!</h1>
+            <input type="search" name="search" id="search" placeholder="Search..." autocomplete="off" autocorrect="off">
+        </div>
         <div class="items">
             {% for item in list %}
-            <p>{{ item.name }}</p>
+            <p>
+                <span>{{ item.name }}</span>
+                <a class="btn-action btn-mini" href="{% url 'delete_item' item.id %}"
+                    data-item="{{ item }}">&#10005;</a>
+            </p>
             {% endfor %}
             <p id="add-item">+ Add</p>
         </div>
@@ -32,6 +44,12 @@
             </form>
         </div>
     </div>
+
+    <footer>
+        <p>© 2023 Helloworld Chat. All rights reserved.</p>
+        <p>Made with ❤️ by <a href="https://github.com/OtakuTotipotent/my_flask_app">OtakuTotipotent</a></p>
+        <p>Source code available on <a href="https://github.com/OtakuTotipotent/helloworld-chat">GitHub</a></p>
+    </footer>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
