@@ -1,3 +1,7 @@
-from django.shortcuts import render
+# helloworld-chat/helloworld/views.py
 
-# Create your views here.
+from django.shortcuts import HttpResponse
+
+
+def home(request):
+    return HttpResponse("Hello Django!")
