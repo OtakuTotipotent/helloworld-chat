@@ -25,7 +25,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "helloworld_chat_app.urls"
+ROOT_URLCONF = "helloworld_chat.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -41,7 +41,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "helloworld_chat_app.wsgi.application"
+WSGI_APPLICATION = "helloworld_chat.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
