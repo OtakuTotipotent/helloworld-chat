@@ -1,6 +1,5 @@
 Folder PATH listing
-Volume serial number is C2BD-5BE6
-D:.
+HELLOWORLD-CHAT
 �   .gitattributes
 �   .gitignore
 �   app.py
@@ -17,36 +16,26 @@ D:.
 �   �   apps.py
 �   �   models.py
 �   �   tests.py
+�   �   urls.py
 �   �   views.py
 �   �   __init__.py
 �   �   
 �   +---migrations
 �           __init__.py
+�   +---templates
+�           home.html
 �           
-+---helloworld_chat_app
++---helloworld_chat
 �   �   asgi.py
 �   �   settings.py
 �   �   urls.py
 �   �   wsgi.py
 �   �   __init__.py
-�   �   
-�   +---__pycache__
-�           settings.cpython-313.pyc
-�           urls.cpython-313.pyc
-�           wsgi.cpython-313.pyc
-�           __init__.cpython-313.pyc
-�           
-+---instance
-�       database.db
-+---website
-    �   models.py
-    �   views.py
-    �   __init__.py
-    �   
-    +---static
-    �       script.js
-    �       style.css
-    �       
-    +---templates
-            index.html
-            
+�
++---static
+�   �   script.js
+�   �   style.css
+�
++---templates
+�   �   index.html
+�         
