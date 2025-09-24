@@ -22,7 +22,7 @@ HELLOWORLD-CHAT
 �   �   
 �   +---migrations
 �           __init__.py
-�   +---templates
+�   +---templates/helloworld/
 �           home.html
 �           
 +---helloworld_chat

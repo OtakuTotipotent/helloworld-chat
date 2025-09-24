@@ -1,7 +1,11 @@
 # helloworld-chat/helloworld/views.py
 
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
+
+
+def index(request):
+    return render(request, "index.html")
 
 
 def home(request):
-    return HttpResponse("Hello Django!")
+    return render(request, "helloworld/home.html")
