@@ -14,8 +14,8 @@ body {
 }
 
 ::selection {
-    background-color: palevioletred;
-    color: black;
+    background-color: black;
+    color: palevioletred;
 }
 
 .container {

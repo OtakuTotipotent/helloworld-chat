@@ -6,7 +6,11 @@
 
 <div class="container">
     <div class="container-header">
-        <h1>Hello User!</h1>
+        <h1>Hello
+            {% if user.is_authenticated %}
+            {{ user.username }}
+            {% endif %}
+        </h1>
         <input type="search" name="search" id="search" placeholder="Search..." autocomplete="off" autocorrect="off">
     </div>
     <div class="items">
