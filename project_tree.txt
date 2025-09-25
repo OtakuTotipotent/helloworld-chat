@@ -1,0 +1,41 @@
+helloworld-chat
+ ┣ venv
+ ┣ helloworld
+ ┃ ┣ migrations
+ ┃ ┃ ┣ 0001_initial.py
+ ┃ ┃ ┣ 0002_contact.py
+ ┃ ┃ ┗ __init__.py
+ ┃ ┣ templates
+ ┃ ┃ ┗ helloworld
+ ┃ ┃ ┃ ┗ home.html
+ ┃ ┣ admin.py
+ ┃ ┣ apps.py
+ ┃ ┣ models.py
+ ┃ ┣ tests.py
+ ┃ ┣ urls.py
+ ┃ ┣ views.py
+ ┃ ┗ __init__.py
+ ┣ helloworld_chat
+ ┃ ┣ asgi.py
+ ┃ ┣ settings.py
+ ┃ ┣ urls.py
+ ┃ ┣ wsgi.py
+ ┃ ┗ __init__.py
+ ┣ static
+ ┃ ┣ script.js
+ ┃ ┗ style.css
+ ┣ templates
+ ┃ ┣ registration
+ ┃ ┃ ┣ login.html
+ ┃ ┃ ┗ signup.html
+ ┃ ┗ base.html
+ ┣ .gitattributes
+ ┣ .gitignore
+ ┣ app.py
+ ┣ db.sqlite3
+ ┣ LICENSE
+ ┣ manage.py
+ ┣ Project.md
+ ┣ README.md
+ ┣ requirements.txt
+ ┗ tree.txt

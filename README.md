@@ -4,7 +4,7 @@
 
 ## Introduction
 >
-> Helloworld Chat is a web application that allows users to create accounts, manage contacts, and engage in private messaging. The application is built using Django, a popular & powerful web framework for Python, and follows the Model-View-Controller (MVC) architectural pattern.
+> Helloworld Chat is a web application that allows users to create accounts, manage contacts, and engage in private messaging. The application is built using Django, a popular & powerful web framework for Python, and follows the Model-View-Template (MVT) architectural pattern.
 > The application is designed to be user-friendly, secure, and scalable, with a focus on providing a seamless user experience.
 
 ## Planning & Roadmap
