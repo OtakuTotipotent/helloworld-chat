@@ -5,7 +5,8 @@ class AddContactForm(forms.Form):
     username = forms.CharField(
         max_length=200,
         required=True,
-        label="Enter registered username:",
+        label="Enter username:",
+        help_text="The username is specific that users create with...",
     )
     name = forms.CharField(
         max_length=20,
